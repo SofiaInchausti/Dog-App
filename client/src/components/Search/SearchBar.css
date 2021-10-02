@@ -1,0 +1,30 @@
+.search{  
+  color: white;
+  font-size: 15px;
+  border-left: none;
+  cursor: pointer;
+  width: 110px;
+  text-align: inherit;
+  padding: 12px;
+  opacity: 0.9;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(34 33 33 / 19%);
+  margin-left: 5px;
+  opacity: 0.90;
+}
+ 
+.inputSearch{
+  padding: 8px;
+  border: 1px solid rgb(180, 180, 180);
+  width: 25%;
+  border-radius: 3px;
+  background: #fdfdfd;
+  margin-bottom: 12px;
+}
+.inputSearch:hover{
+    background-color: rgb(222, 228, 227);
+}
+/* .inputSearch:after {
+    content: "";
+    clear: both;
+}
+ */

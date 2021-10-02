@@ -1,0 +1,28 @@
+.pagination{
+    display: inline-block;
+    text-align: center;
+}
+li{
+    display: inline;
+}
+li a{
+    color:white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: rgb(38, 90, 83);
+    opacity: 95%;
+    padding: 8px 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(34, 33, 33, 0.19);
+}
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}

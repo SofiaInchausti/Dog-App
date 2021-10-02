@@ -1,0 +1,57 @@
+.dogBackground{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: linear-gradient(to bottom, rgb(84, 95, 199), rgb(19, 22, 59));
+    /* background-color: rgb(64, 64, 179); */
+    /* background-image: url("../../img/pexels-ray-bilcliff-1509238.jpg"); */
+    min-height: 100vh;
+    min-width: 100vh;
+    flex-direction: column;
+}
+
+
+.buttonDog{
+    width: 110px;
+    font-size: 15px;
+    text-align: inherit;
+    padding: 12px;
+    opacity: 0.9;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(34 33 33 / 19%);
+    margin-left: 5px;
+}
+
+.selects{
+    border-radius: 5px;
+    width: 120px;
+    background-color: #216e70;
+    color: #ffffff;
+    padding: 7px 3px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(34 33 33 / 19%);
+    cursor: pointer;    
+    user-select: none;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+.label{
+    font-size: 22px;
+    color: white;
+}
+.container{
+    width:100%;
+    max-width:1200px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+   
+}

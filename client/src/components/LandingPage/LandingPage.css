@@ -1,0 +1,44 @@
+body:before{
+    content: '';
+    position: absolute;
+    background-color:black;
+}
+.landingPage{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 30px;
+    background-image: url("../../img/dog-1149964_1921.jpg");
+    min-height: 100vh;
+    min-width: 100vh;
+    flex-direction: column;
+
+    font-size: 30px;
+    margin-top: 0px; 
+    color:white;
+     
+} 
+
+
+button{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(34, 33, 33, 0.19);
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    color: white;
+    background-color: rgb(33, 94, 94);
+    padding: 15px 32px;
+    opacity: 0.90;   
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(2, 82, 9, 0.76);
+}
+
+
+h1{
+    margin-bottom: 12px;
+
+}

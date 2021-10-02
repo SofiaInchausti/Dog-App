@@ -1,0 +1,91 @@
+.back{   
+   background: radial-gradient(#b6b31f, #3fa6a1);
+   background-size: 'cover';
+    background-repeat: 'no-repeat';
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+
+.form{
+    border-radius: 5px;
+    background-color: #0f49b280;
+    padding: 20px;
+    width: 60%;
+    color: white;
+    font-weight: bolder;
+  
+   
+    
+}
+.formContent{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 37px;
+}
+.formInput, .danger{
+    width: 55%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputSubmit, .formInputValue,.formInputValue{
+    width: 45%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.inputSubmit:hover {
+    background-color: #216e70;
+  }
+
+.formInputValue{
+    width: 20%;
+    margin-right: 13px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+.danger{
+    border: 2px solid red;
+}
+.dangerValue{
+    border: 2px solid #b6261f;
+    width: 20%;
+    margin-right: 15px;
+    color: #818489f0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    justify-content: center;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.buttonBack{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.description{
+    color: #7f1414;
+    font-size: 10px;
+    margin-right: -70px;
+    margin-left: 114px;
+    margin-top: 1px;
+  }
+  
+ 

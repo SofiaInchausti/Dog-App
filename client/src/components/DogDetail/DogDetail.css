@@ -1,0 +1,54 @@
+.backDetail{   
+    /* background: radial-gradient(#1d455c, #633fa6);
+    background-size: 'cover';
+     background-repeat: 'no-repeat';
+     min-height: 100vh;
+     min-width: 100vh; */
+     min-height: 100vh;
+     min-width: 80vh; 
+     display: flex;
+     flex-direction: column;
+     align-content: space-around;
+    justify-content: space-around;
+    font-size: 30px;
+    /* background-image:url("../../img/dogs-4417556_1920.jpg") ;
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center; */
+    background: linear-gradient(to bottom, rgb(187, 199, 84), rgb(95, 100, 33));
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+ .divButton{
+    display: -webkit-box;
+ }
+ .divDetail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+ }
+.cardDetail{
+   font-size: 15px;
+   background-color: rgba(0, 0, 0, .6);
+   height: 590px;
+   width: 630px;
+   padding: 0px;
+   /* display: flex; */
+   border-radius: 8px;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   /* align-content: center; */
+   justify-content: flex-start;
+  
+}
+.tempDetail{
+  
+   display: flex;
+   justify-content: space-evenly;
+}
+
+

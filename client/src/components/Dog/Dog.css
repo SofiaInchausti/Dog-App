@@ -1,0 +1,82 @@
+
+.cards{
+    width:270px;
+    height: 325px;
+    border-radius: 8px;
+    box-shadow:0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all o.25s;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+.temperamentsName{
+    margin-bottom: 7px;
+    margin-top: auto;
+    /* margin-right: 5px; */
+} 
+
+h4 {
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    margin-top: 12px;
+    font-weight: 100px;
+    margin-bottom: 17px;
+}
+.temperaments{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    align-content: flex-end;
+
+}
+
+img{
+    width: 250px;
+    height: 190px;
+    border-radius: 5px;
+   
+}
+
+
+
+.cards{
+    font-weight: 600;
+}
+
+.cards {
+    padding:0 1rem;
+    font-size:0px;
+    font-weight: 300;
+}
+.temperamentsH5{
+    color:white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* font-size: 0px; */
+    font-weight: bolder;
+    
+}
+.link{
+   
+   text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.link a{
+    color: white;
+
+}
+.cards:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+    font-size: 13px;
+    
+}
