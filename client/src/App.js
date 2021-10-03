@@ -13,8 +13,7 @@ function App() {
   useEffect(() => {
     dispatch(getDogs())
     dispatch(getTemperaments())
-    //VEER PIDE DISPATCH    
-  }, [])
+  }, [dispatch])
 
   return (
     <BrowserRouter>
@@ -23,8 +22,7 @@ function App() {
         <Route exact path="/" component={LandingPage}/>
         <Route exact path="/dogs/add" component={AddDog}/>
         <Route path="/dogs/:id" component={DogDetail}/>
-        <Route exact path="/dogs" component={Dogs}/>       
-     
+        <Route exact path="/dogs" component={Dogs}/>      
       </Switch>
     </div>
     </BrowserRouter>

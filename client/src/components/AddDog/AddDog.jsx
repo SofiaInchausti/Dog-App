@@ -12,8 +12,7 @@ function validateDog(dog){
     if (dog.heightMin<1){
         errorsDog.heightMin="Min height is required"
     }
-
-     if (dog.heightMax<1){
+    if (dog.heightMax<1){
         errorsDog.heightMax="Max height is required"
     }
     if (dog.weightMin<1){
@@ -36,8 +35,7 @@ function validateDog(dog){
 export default function AddDog(){
     const dispatch=useDispatch();
     const [errorsFromDog,setErrorsFromDog]=useState({})
-    const temperaments=useSelector(state=>state.dogTemperaments)
-  
+    const temperaments=useSelector(state=>state.dogTemperaments)  
     
     const [dog, setDog] = useState({
         name:"",
@@ -53,7 +51,7 @@ export default function AddDog(){
     
     useEffect(() => {
        dispatch(getTemperaments())
-    }, [])
+    }, [dispatch])
 
     
     function onInputChange(e) {
@@ -175,7 +173,7 @@ export default function AddDog(){
            
         </p>
 
-        <div class="flex">
+        <div className="flex">
         {errorsFromDog.heightMin && (
             <p className="description">{errorsFromDog.heightMin}</p>
              )}
