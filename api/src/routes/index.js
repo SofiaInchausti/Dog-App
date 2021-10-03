@@ -5,9 +5,7 @@ const temperamentsRoutes = require('./temperament')
 
 const router=express.Router();
 
-// Configurar los routers
-// Ejemplo: router.use('/auth', authRouter);
-router.use('/dogs', dogRoutes) // /api/characters/
+router.use('/dogs', dogRoutes) 
 router.use('/temperament', temperamentsRoutes)
 
 

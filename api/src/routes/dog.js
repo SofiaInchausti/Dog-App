@@ -10,17 +10,13 @@ function getApi (){
     var apiDogsPromise=axios.get('https://api.thedogapi.com/v1/breeds/?api_key'+apiKey)
         var dbDogsPromise=Dog.findAll({
             include:Temperament
-    })
-    
+    })    
     return Promise.all([
         apiDogsPromise,
         dbDogsPromise
     ]).then(result=>{
         var apiDogs=result[0].data
-        var dbDogs=result[1]
-        
-       
-              
+        var dbDogs=result[1]              
         apiDogs = apiDogs.map((d) => {
             return {
                 id: d.id,
@@ -28,9 +24,6 @@ function getApi (){
                 image: d.image.url,
                 height:d.height.metric? d.height.metric:"0",
                 weight:d.weight.metric? d.weight.metric:"0",
-                // .split(" - ").map(e=>e==="NaN"? e=6:e=e) :["1"],
-                //  : ["1"], // map(e=>e==="NaN"? e=6:e=e),
-               
                 lifeSpan:d.life_span,
                 temperaments:d.temperament? d.temperament.split(","): ["This dog no has temperaments added"]
             }
@@ -42,17 +35,11 @@ function getApi (){
                 image: d.image,
                 height:d.height? d.height:"0",
                 weight:d.weight? d.weight:"0",
-                // split("-"): ["1"],
                 lifeSpan:d.lifeSpan,
                 temperaments:d.temperaments.map(e=>e.name)
-
             }
         })
-        console.log(dbDogs)
-        
         totalDogs=dbDogs.concat(apiDogs)
-        // console.log(totalDogs)
-      
         return totalDogs
         })
     }
@@ -81,7 +68,6 @@ function getApi (){
 
     router.get("/",async (req,res,next)=>{   
     var name= req.query.name   
-    
     try{ 
         var apiDogs= await getApi()  
         if(!name){            
@@ -109,16 +95,13 @@ function getApi (){
     }
     catch(error){
         next('Unable to connect to the database:')
-    }
-          
-    
-})
+    }    
+    })
 
-
-router.post('/',async (req, res,next) => {
-    const {name,image,height,weight,lifeSpan,temperaments} = req.body
-    try{
-        let dog=await Dog.create({
+    router.post('/',async (req, res,next) => {
+        const {name,image,height,weight,lifeSpan,temperaments} = req.body
+        try{
+            let dog=await Dog.create({
             id: uuidv4(),
             name,
             image,
@@ -133,11 +116,9 @@ router.post('/',async (req, res,next) => {
           dog.addTemperaments(tempOndb) 
           
           res.status(200).send(dog);
-          
-
-    }      
-    catch{
-        error => next(error)
+        }
+        catch{
+            error => next(error)
     }
 })
 

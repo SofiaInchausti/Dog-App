@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 const { expect } = require('chai');
 const session = require('supertest-session');
 const app = require('../../src/app.js');
@@ -21,13 +20,6 @@ describe('Dog routes', () => {
   }));
   beforeEach(() => Dog.sync({ force: true })
     .then(() => Dog.create(dog)));
-  // describe('GET /dogs', () => {
-  //   it('should get 200', () =>
-  //     agent.get('/dogs').expect(200)
-  //   );
-  // });
-
-
 
 describe('POST /dogs', function () {
   it('responde con 302', function(){

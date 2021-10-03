@@ -6,9 +6,6 @@ module.exports = function(sequelize) {
        
         name: {
             type: DataTypes.STRING,
-            //si pongo en false me da error
-            // allowNull: false
-            
-        },
+            },
     })
 }
